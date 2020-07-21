@@ -12,16 +12,6 @@
 #There will always be at least one number in the input string.
 #Output string must be two numbers separated by a single space, and highest number is first.
 
-def high_and_low(numbers):
-    num_str_list = numbers.split()
-
-    num_int_list = []
-
-
-    for num in num_str_list:
-        num_int_list.append(int(num))
-        
-    max_num = str(max(num_int_list))
-    min_num = str(min(num_int_list))
-    numbers = max_num + " " + min_num
-    return numbers
+def high_and_low(numbers): #z.
+    nn = [int(s) for s in numbers.split(" ")]
+    return "%i %i" % (max(nn),min(nn))
