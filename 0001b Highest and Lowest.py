@@ -13,5 +13,12 @@
 #Output string must be two numbers separated by a single space, and highest number is first.
 
 def high_and_low(numbers): #z.
+    
+    #List comprehension: A concise way of creating lists. Lists that generate themselves with an internal for loop / if statement.
+    
+    #Python documentation: “A list comprehension consists of brackets containing an expression followed by a for clause, then zero or more for or if clauses. The result will be a new list resulting from evaluating the expression in the context of the for and if clauses which follow it.”
+    
     nn = [int(s) for s in numbers.split(" ")]
+
+    
     return "%i %i" % (max(nn),min(nn))
